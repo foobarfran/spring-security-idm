@@ -1,0 +1,29 @@
+server:
+  port: 8080
+facebook:
+  client:
+    clientId: 1165631203459588
+    clientSecret: 6b716fa244721abddd82a4f98901fa94
+    accessTokenUri: https://graph.facebook.com/oauth/access_token
+    userAuthorizationUri: https://www.facebook.com/dialog/oauth
+    tokenName: oauth_token
+    authenticationScheme: query
+    clientAuthenticationScheme: form
+  resource:
+    userInfoUri: https://graph.facebook.com/me
+google:
+  client:
+    clientId: 518467104901-6h2cahoa4lbo25aep6d80ii5uactnq8a.apps.googleusercontent.com
+    clientSecret: eUiE5JqK25hR_-XDHzGgX34-
+    accessTokenUri: https://accounts.google.com/o/oauth2/token
+    userAuthorizationUri: https://accounts.google.com/o/oauth2/auth
+    scope: openid
+  resource:
+    userInfoUri: https://www.googleapis.com/oauth2/v3/userinfo
+security:
+  oauth2:
+    client:
+      client-id: foo-client
+      client-secret: foo-secret
+      scope: read,write
+      auto-approve-scopes: '.*'
